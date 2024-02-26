@@ -15,6 +15,9 @@ django = "4.2.8"
 stripe = "^8.4.0"
 
 
+[tool.poetry.group.dev.dependencies]
+pytest-django = "^4.8.0"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
