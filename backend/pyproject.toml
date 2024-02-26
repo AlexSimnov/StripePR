@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "stripepj"
+version = "0.1.0"
+description = ""
+authors = ["Симонов Алексей <alxxalxx@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django-rest-framework = "^0.1.0"
+psycopg2-binary = "^2.9.9"
+gunicorn = "^21.2.0"
+python-dotenv = "^1.0.1"
+django = "4.2.8"
+stripe = "^8.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
