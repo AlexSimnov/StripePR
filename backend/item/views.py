@@ -1,4 +1,4 @@
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView\
 
 from django.views import View
 from django.conf import settings
@@ -36,7 +36,7 @@ class CreateCheckoutSessionView(View):
     def post(self, request, *args, **kwargs):
         product_id = self.kwargs["pk"]
         product = Item.objects.get(id=product_id)
-        YOUR_DOMAIN = "http://127.0.0.1:8000"
+        YOUR_DOMAIN = settings.CSRF_HTTP
         checkout_session = stripe.checkout.Session.create(
             payment_method_types=['card'],
             line_items=[
