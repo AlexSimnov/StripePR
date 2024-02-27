@@ -11,3 +11,9 @@
 http://stripepj.ddns.net/item/1/
 ```
 
+## Данные для входа в admin
+
+```
+login: rt
+password: 1
+```
